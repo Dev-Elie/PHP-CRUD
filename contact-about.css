@@ -1,0 +1,29 @@
+.contact{
+    text-align: center;
+}
+.contact h2{
+    padding: 2rem;
+}
+.contact p{
+    padding: 4rem;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+
+/* About */
+
+
+.about{
+    text-align: center;
+}
+.about h2{
+    padding: 2rem;
+}
+.about p{
+    padding: 4rem;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
