@@ -81,7 +81,6 @@ session_start();
                 </p>
                 <a href="home.php?edit=<?php echo $row['id'];?> "> Edit </a>
                 <a href="process.php?delete=<?php echo $row['id'];?> "> Delete </a>
-                <a href="update_post_img.php"> Update post image</a>
 
             </div>
             <?php endwhile; ?>
@@ -153,12 +152,23 @@ session_start();
         <div class="main">
             <h3>Create a new post</h3>
             <form action="process.php" method="post">
+            <input type="hidden" name="id" value="<?php echo $id; ?>">
                 <input type="text" placeholder="Title" name="title" value="<?php echo $title; ?>">
                 <br>
                 <textarea name="body" id="" cols="50" rows="10" placeholder="Type your post here"
                     value="<?php echo $body; ?>"></textarea>
                 <br>
+
+                <?php
+                if ($update == true):
+                ?>
+
+                <button type="submit" name="update">Update</button>
+
+                <?php else: ?>
                 <button type="submit" name="post">Publish</button>
+                <?php endif; ?>
+
             </form>
         </div>
     </main>
